@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt</title>
+    <link rel="stylesheet" href="../css/generel.css">
+    <link rel="stylesheet" href="../css/header-footer.css">
+    <link rel="stylesheet" href="../css/recipe-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="box-shadow">
+        <div class="content-limit padding">
+            <div class="margin-limit">
+                <div class="menu">
+                    <a href="../index.html">
+                        <img src="../assets/img/logo.png" alt="" class="menu-logo">
+                    </a>
+                    <nav>
+                        <ul class="menu-nav">
+                            <li><a href="../index.html">Start</a></li>
+                            <li><a href="../html/steak.html">Rezept des Tages</a></li>
+                            <li><a href="../html/contact.html">Kontakt</a></li>
+                            <li><a href="../html/impressum.html">Impressum</a></li>
+                        </ul>
+
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class=" content-limit padding">
+            <div class="margin-limit">
+                <h1>Steak</h1>
+                <img src="../assets/img/steak.jpg" alt="Steak-img" class="recipe-hero-img">
+                <div class="section1-info-div">
+                    <div class="section1-info">
+                        <img src="../assets/img/icons/clock-regular.svg" alt="" class="section1-info-img">
+                        <p>30 Minuten</p>
+                    </div>
+                    <div class="section1-info">
+                        <img src="../assets/img/icons/brain-solid.svg" alt="" class="section1-info-img">
+                        <p>Simpel</p>
+                    </div>
+                    <div class="section1-info">
+                        <img src="../assets/img/icons/calendar-alt-regular.svg" alt="" class="section1-info-img">
+                        <p>15.12.2025</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section class="content-limit padding">
+            <div class="margin-limit">
+                <form onsubmit="return false" action="" class="form-section2">
+                    <label for="portion">Zutaten für</label>
+                    <input type="number" min="1" max="20" id="portion" placeholder="Anzahl an Portionen"
+                        class="input-portions" required>
+                    <input type="submit" onclick="rezept()" value="Portionen" class="input-button">
+                </form>
+
+                <h3>argentinisches Rindersteak:</h3>
+                <table>
+                    <tr>
+                        <td>
+                            <span id="zutA">1</span>
+                            argentinisches <span class="plural" data-count-id="zutA" data-singular="Rindersteak"
+                                data-plural="Rindersteaks">Rindersteak</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span id="zutB">o,5</span>
+                            <span class="plural" data-count-id="zutB" data-singular="neutrales Öl"
+                                data-plural="neutrale Öle">neutrales Öl</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Grobes Salz</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Frisch gemahlener schwarzer Pfeffer</span>
+                        </td>
+                    </tr>
+                    <tr>
+                </table>
+                <h3>Chimichurri (kleine Portion):</h3>
+                <table>
+                    <tr>
+                        <td>
+                            <span id="zutC">o,5</span> Bund glatte <span class="plural" data-count-id="zutC"
+                                data-singular="Petersilie" data-plural="Petersilien">Petersilie</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span id="zutD">1</span><span class="plural" data-count-id="zutD"
+                                data-singular=" kleine Knoblauchzehe" data-plural=" kleine Knoblauchzehen"> kleine
+                                Knoblauchzehe</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span id="zutE">1</span> <span class="plural" data-count-id="zutE" data-singular="Prise"
+                                data-plural="Prisen">Prise</span> Chiliflocken
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span id="zutF">2</span> EL Olivenöl
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span id="zutG">1</span> <span class="plural" data-count-id="zutG" data-singular="Prise"
+                                data-plural="Prisen">Prise</span> Salz
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Etwas Pfeffer</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span id="zutH">1</span> <span class="plural" data-count-id="zutH"
+                                data-singular="kleiner Maiskolben" data-plural="kleine Meiskolben">kleiner
+                                Maiskolben</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+
+        </section>
+
+        <section class="content-limit padding section3">
+            <div class="margin-limit">
+                <h2>Zubereitung</h2>
+                <div class="section1-info-div">
+                    <div class="section1-info">
+                        <img src="../assets/img/icons/clock-regular.svg" alt="clock-img" class="section1-info-img">
+                        <p>ca. 15 Minuten</p>
+                    </div>
+                    <div class="section1-info">
+                        <img src="../assets/img/icons/clock-regular.svg" alt="clock-img" class="section1-info-img">
+                        <p>Gesammtzeit ca. 30 Minuten</p>
+                    </div>
+                </div>
+                <p>Nimm 1 Rindersteak (Hüfte oder Rumpsteak) mit ca. 220–250 g, ½ EL neutrales Öl, grobes Salz und
+                    Pfeffer;
+                    für die Chimichurri-Soße nimm ca. ½ Bund glatte Petersilie, 1 kleine Knoblauchzehe, etwas Chili
+                    (oder 1
+                    Prise Chiliflocken), 1 EL Rotweinessig, 2–3 EL Olivenöl, 1 Prise Salz und etwas Pfeffer (Gesamtzeit
+                    ca.
+                    30 Minuten). Hol das Steak ca. 30 Minuten vorher aus dem Kühlschrank, tupf es trocken, reib es
+                    leicht
+                    mit Öl ein und salze es, dann hackst du Petersilie, Knoblauch und Chili sehr fein und verrührst
+                    alles
+                    mit Essig, Olivenöl, Salz und Pfeffer zu Chimichurri, die du während des Bratens kurz ziehen lässt.
+                    Jetzt eine Pfanne (oder Grill) richtig stark vorheizen, das Steak pro Seite ca. 2–3 Minuten braten
+                    für
+                    medium-rare oder ca. 3–4 Minuten für medium (je nach Dicke), anschließend 5 Minuten ruhen lassen,
+                    erst
+                    dann pfeffern, quer zur Faser schneiden und mit der Chimichurri servieren.</p>
+
+                <h2>Rezept erstellt von</h2>
+                <div class="creator-div">
+                    <img src="../assets/img/character.jpg" alt="character-img" class="creator-img">
+                    <p class="creator-name">Radhwan</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section class="footer-background">
+        <div class="content-limit padding">
+            <footer class="margin-limit footer-special-margin">
+                <a href="../index.html">
+                    <img src="../assets/img/logo.png" alt="logo-img" class="footer-logo">
+                </a>
+                <div class="footer-logo-foramtion">
+                    <img src="../assets/img/instagram-logo.png" alt="Instagram-Logo" class="social-media-logo">
+                    <img src="../assets/img/facebook-logo.png" alt="Facbook-Logo" class="social-media-logo">
+                    <img src="../assets/img/x-logo.png" alt="X-Logo" class="social-media-logo">
+                </div>
+            </footer>
+        </div>
+    </section>
+    <script src="../javascript/script-steak.js"></script>
+</body>
+
+</html>

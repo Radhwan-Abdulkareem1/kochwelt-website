@@ -1,0 +1,58 @@
+.box {
+    background-color: #efefef;
+    border-radius: 10px;
+    width: 400px;
+    padding: 16px;
+}
+
+.contact-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.label-margin {
+    display: inline-block;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: 0;
+    width: 380px;
+    height: 24px;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 380px;
+    border: 0;
+    height: 150px;
+    resize: none;
+    /* User kann nicht mehr resizen */
+}
+
+.button-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+}
+
+button {
+    background-color: green;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    padding: 8px 40px;
+    cursor: pointer;
+}
+
+
+

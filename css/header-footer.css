@@ -1,0 +1,78 @@
+.box-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
+}
+
+.menu-nav {
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+    margin: 40px 0 0 0;
+    gap: 16px;
+}
+
+.menu-logo {
+    width: 200px;
+    height: auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 36px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 144px;
+    margin-bottom: 0;
+}
+
+.footer-background {
+    background-color: #232323;
+}
+
+.footer-logo {
+    width: 200px;
+    filter: invert(1);
+}
+
+.footer-logo-foramtion {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.social-media-logo {
+    width: 32px;
+    height: 32px;
+}
+
+.footer-special-margin {
+    margin-bottom: 0;
+}
+
+main {
+    flex: 1;
+    /* Main wächst und nimmt freien Platz zwischen Header und Footer */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Körper nimmt immer die ganze Höhe */
+    margin: 0;
+}
+
+header,
+.footer-background {
+    flex-shrink: 0;
+    /* Header und Footer dürfen nicht schrumpfen */
+}
+
+.menu {
+    margin-bottom: 0;
+  }

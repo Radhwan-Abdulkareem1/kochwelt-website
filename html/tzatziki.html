@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt</title>
+    <link rel="stylesheet" href="../css/generel.css">
+    <link rel="stylesheet" href="../css/header-footer.css">
+    <link rel="stylesheet" href="../css/recipe-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="box-shadow">
+        <div class="content-limit padding">
+            <div class="margin-limit">
+                <div class="menu">
+                    <a href="../index.html">
+                        <img src="../assets/img/logo.png" alt="" class="menu-logo">
+                    </a>
+                    <nav>
+                        <ul class="menu-nav">
+                            <li><a href="../index.html">Start</a></li>
+                            <li><a href="../html/steak.html">Rezept des Tages</a></li>
+                            <li><a href="../html/contact.html">Kontakt</a></li>
+                            <li><a href="../html/impressum.html">Impressum</a></li>
+                        </ul>
+
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="content-limit padding">
+            <div class="margin-limit">
+                <h1>Crème brûlée</h1>
+                <img src="../assets/img/tzaziki.jpg" alt="Steak-img" class="recipe-hero-img">
+                <div class="section1-info-div">
+                    <div class="section1-info">
+                        <img src="../assets/img/icons/clock-regular.svg" alt="" class="section1-info-img">
+                        <p>3 Stunden</p>
+                    </div>
+                    <div class="section1-info">
+                        <img src="../assets/img/icons/brain-solid.svg" alt="" class="section1-info-img">
+                        <p>Simpel</p>
+                    </div>
+                    <div class="section1-info">
+                        <img src="../assets/img/icons/calendar-alt-regular.svg" alt="" class="section1-info-img">
+                        <p>15.12.2025</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section class="content-limit padding">
+            <div class="margin-limit">
+                <form onsubmit="return false" action="" class="form-section2">
+                    <label for="portion">Zutaten für</label>
+                    <input type="number" min="1" max="20" id="portion" placeholder="Anzahl an Portionen"
+                        class="input-portions" required>
+                    <input type="submit" onclick="rezept()" value="Portionen" class="input-button">
+                </form>
+                <table>
+                    <tr>
+                        <td>
+                            <span id="zutA">100</span>
+                            <span class="gToKg"> g</span> Salatgruke
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span id="zutB">150</span>
+                            <span class="gToKg"> g</span> griechischer Joghurt (am besten 10% für cremig)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span id="zutC">0,5</span> <span id="replacegarlic">Knoblauchzeh</span> gepresst/gerieben
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span id="zutD">0,5</span> EL Olivenöl
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span id="zutE">0,5</span> TL Zitronensaft
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span id="zutF">0,5</span> EL gehackter Dill
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Salz, Pfeffer</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+
+        </section>
+
+        <section class="content-limit padding section3">
+            <div class="margin-limit">
+                <h2>Zubereitung</h2>
+                <div class="section1-info-div">
+                    <div class="section1-info">
+                        <img src="../assets/img/icons/clock-regular.svg" alt="clock-img" class="section1-info-img">
+                        <p>ca. 1 Stunde</p>
+                    </div>
+                    <div class="section1-info">
+                        <img src="../assets/img/icons/clock-regular.svg" alt="clock-img" class="section1-info-img">
+                        <p>Gesammtzeit ca. 3 Stunden</p>
+                    </div>
+                </div>
+                <p>Ofen auf 150 °C Ober-/Unterhitze vorheizen und ein Ramekin in eine größere Form stellen (fürs
+                    Wasserbad).
+                    Sahne mit Vanille und Prise Salz erhitzen, nur bis sie dampft (nicht kochen). Eigelb mit Zucker kurz
+                    verrühren (nicht schaumig), warme Sahne langsam einrühren und die Masse ins Förmchen gießen
+                    (optional
+                    durchs Sieb). Heißes Wasser in die große Form füllen, bis es etwa halb so hoch wie das Förmchen
+                    steht,
+                    dann 30–40 Min backen, bis der Rand fest ist und die Mitte noch leicht wackelt. Abkühlen lassen,
+                    mind. 2
+                    Std kaltstellen, dann Zucker oben drauf und mit Brenner karamellisieren.</p>
+
+                <h2>Rezept erstellt von</h2>
+                <div class="creator-div">
+                    <img src="../assets/img/character.jpg" alt="character-img" class="creator-img">
+                    <p class="creator-name">Radhwan</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section class="footer-background">
+        <div class="content-limit padding">
+            <footer class="margin-limit footer-special-margin">
+                <a href="../index.html">
+                    <img src="../assets/img/logo.png" alt="logo-img" class="footer-logo">
+                </a>
+                <div class="footer-logo-foramtion">
+                    <img src="../assets/img/instagram-logo.png" alt="Instagram-Logo" class="social-media-logo">
+                    <img src="../assets/img/facebook-logo.png" alt="Facbook-Logo" class="social-media-logo">
+                    <img src="../assets/img/x-logo.png" alt="X-Logo" class="social-media-logo">
+                </div>
+            </footer>
+        </div>
+    </section>
+    <script src="../javascript/script-tzatziki.js"></script>
+</body>
+
+</html>

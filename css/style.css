@@ -1,0 +1,59 @@
+.img-center {
+    display: flex;
+    justify-content: space-around;
+    gap: 48px;
+    margin-bottom: 48px;
+}
+
+.hero-image {
+    width: 400px;
+    object-fit: cover;
+}
+
+.button {
+    margin-top: 48px;
+    background-color: green;
+    color: white;
+    padding: 12px 32px 12px 32px;
+    border: 0;
+}
+
+.new-recipe-headline {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.recipe-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.recipe-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.recipe-name {
+    margin: 0;
+}
+
+.events-title {
+    text-align: center;
+}
+
+.event-information {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding-bottom: 100px;
+}
+
+.event-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
