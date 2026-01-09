@@ -6,7 +6,7 @@ const zutaten = [
     { id: "zutE", base: 0.5, comma: true }, // Zitrone
     { id: "zutF", base: 0.5, comma: true }, // Dill
 ];
-function rezept() {
+function rezept() { 
     const portionsGröße = Number(document.getElementById("portion").value);
 
     if (portionsGröße >= 1 && portionsGröße <= 20) {
