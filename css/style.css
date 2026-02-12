@@ -22,6 +22,20 @@
     font-size: 24px;
     font-weight: bold;
     padding: 20px;
+    text-align: center;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button:focus-visible {
+    outline: 3px solid #8a3ffc;
+    outline-offset: 3px;
+}
+
+.button:focus {
+    outline: none;
 }
 
 .recipe-option {

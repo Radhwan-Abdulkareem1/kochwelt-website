@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/generel.css">
     <link rel="stylesheet" href="css/header-footer.css">
-
+    <link rel="icon" href="./assets/img/icons/logo_small.ico" sizes="32x32">
+    <link rel="stylesheet" href="./assets/img/icons/logo_small.png" sizes="32x32">
 </head>
 
 <body>
@@ -18,7 +19,7 @@
             <div class="margin-limit">
                 <div class="menu">
                     <a href="./index.html">
-                        <img src="./assets/img/logo.png" alt="" class="menu-logo">
+                        <img src="./assets/img/logo.png" alt="Go to homepage" class="menu-logo">
                     </a>
                     <nav>
                         <ul class="menu-nav">
@@ -42,9 +43,8 @@
                         <p>Ein saftiges Steak kannst du ganz einfach zuhause zubereiten. Mit etwa 20–30 Minuten
                             Zeitaufwand
                             gelingt dir ein köstliches Gericht für ein besonderes Mittag- oder Abendessen.</p>
-                        <a href="html/steak.html">
-                            <button class="button"> Rezept öffnen</button>
-                        </a>
+                        <button role="link" class="button" onclick="location.href='html/steak.html'"> Rezept
+                            öffnen</button>
                     </div>
                 </div>
             </div>
@@ -52,7 +52,7 @@
         <section class="lawn">
             <div class="content-limit padding">
                 <div class="margin-limit">
-                    <center class="new-recipe-headline">Lust auf was neues?</center>
+                    <h2 class="new-recipe-headline">Lust auf was neues?</h2>
                     <div class="recipe-option">
                         <a href="html/lemon.html">
                             <div>
@@ -90,7 +90,7 @@
             </div>
         </section>
     </main>
-    <section class="footer-background">
+    <section class="footer-background" aria-label="Footer">
         <div class="content-limit padding">
             <footer class="margin-limit footer-special-margin">
                 <a href="./index.html">
