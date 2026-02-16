@@ -20,7 +20,7 @@
             <div class="margin-limit">
                 <div class="menu">
                     <a href="../index.html">
-                        <img src="../assets/img/logo.png" alt="" class="menu-logo">
+                        <img src="../assets/img/logo.png" alt="Go to homepage" class="menu-logo">
                     </a>
                     <nav>
                         <ul class="menu-nav">
@@ -62,19 +62,27 @@
 
         <section class="content-limit padding">
             <div class="margin-limit">
-                <form onsubmit="return false" action="" class="form-section2">
+                <form onsubmit="rezept(); return false;" class="form-section2">
                     <label for="portion">Zutaten für</label>
                     <input type="number" min="1" max="20" id="portion" placeholder="Anzahl an Portionen"
                         class="input-portions" required>
-                    <input type="submit" onclick="rezept()" value="Portionen" class="input-button">
+
+                    <button type="submit" class="input-button">Portionen</button>
                 </form>
 
                 <h3>argentinisches Rindersteak:</h3>
                 <table>
+
+                    <head>
+                        <tr class="table-header">
+                            <th scope="col">Menge</th>
+                            <th scope="col">Zutat</th>
+                        </tr>
+                    </head>
                     <tr>
                         <td>
                             <span id="zutA">1</span>
-                             <span class="plural" data-count-id="zutA" data-singular="argentinisches Rindersteak"
+                            <span class="plural" data-count-id="zutA" data-singular="argentinisches Rindersteak"
                                 data-plural="argentinische Rindersteaks">argentinisches Rindersteak</span>
                         </td>
                     </tr>
@@ -99,6 +107,13 @@
                 </table>
                 <h3>Chimichurri (kleine Portion):</h3>
                 <table>
+
+                    <head>
+                        <tr class="table-header">
+                            <th scope="col">Menge</th>
+                            <th scope="col">Zutat</th>
+                        </tr>
+                    </head>
                     <tr>
                         <td>
                             <span id="zutC">o,5</span> Bund glatte <span class="plural" data-count-id="zutC"
@@ -161,31 +176,26 @@
                     </div>
                 </div>
                 <p>Nimm 1 Rindersteak (Hüfte oder Rumpsteak) mit ca. 220–250 g, ½ EL neutrales Öl, grobes Salz und
-                    Pfeffer;
-                    für die Chimichurri-Soße nimm ca. ½ Bund glatte Petersilie, 1 kleine Knoblauchzehe, etwas Chili
-                    (oder 1
-                    Prise Chiliflocken), 1 EL Rotweinessig, 2–3 EL Olivenöl, 1 Prise Salz und etwas Pfeffer (Gesamtzeit
-                    ca.
-                    30 Minuten). Hol das Steak ca. 30 Minuten vorher aus dem Kühlschrank, tupf es trocken, reib es
-                    leicht
-                    mit Öl ein und salze es, dann hackst du Petersilie, Knoblauch und Chili sehr fein und verrührst
-                    alles
-                    mit Essig, Olivenöl, Salz und Pfeffer zu Chimichurri, die du während des Bratens kurz ziehen lässt.
-                    Jetzt eine Pfanne (oder Grill) richtig stark vorheizen, das Steak pro Seite ca. 2–3 Minuten braten
-                    für
-                    medium-rare oder ca. 3–4 Minuten für medium (je nach Dicke), anschließend 5 Minuten ruhen lassen,
-                    erst
-                    dann pfeffern, quer zur Faser schneiden und mit der Chimichurri servieren.</p>
+                    Pfeffer; für die Chimichurri-Soße nimm ca. ½ Bund glatte Petersilie, 1 kleine Knoblauchzehe, etwas
+                    Chili (oder 1 Prise Chiliflocken), 1 EL Rotweinessig, 2–3 EL Olivenöl, 1 Prise Salz und etwas
+                    Pfeffer (Gesamtzeit ca. 30 Minuten). Hol das Steak ca. 30 Minuten vorher aus dem Kühlschrank, tupf
+                    es trocken, reib es leicht mit Öl ein und salze es, dann hackst du Petersilie, Knoblauch und Chili
+                    sehr fein und verrührst alles mit Essig, Olivenöl, Salz und Pfeffer zu Chimichurri, die du während
+                    des Bratens kurz ziehen lässt. Jetzt eine Pfanne (oder Grill) richtig stark vorheizen, das Steak pro
+                    Seite ca. 2–3 Minuten braten für eine rosa Garstufe oder ca. 3–4 Minuten für eine durchgehend leicht
+                    rosa Garstufe (je nach Dicke), anschließend 5 Minuten ruhen lassen, erst dann pfeffern, quer zur
+                    Faser schneiden und mit der Chimichurri servieren.
+                </p>
 
                 <h2>Rezept erstellt von</h2>
                 <div class="creator-div">
                     <img src="../assets/img/character.jpg" alt="character-img" class="creator-img">
-                    <p class="creator-name">Radhwan</p>
+                    <h2 class="creator-name">Radhwan</h2>
                 </div>
             </div>
         </section>
     </main>
-    <section class="footer-background">
+    <section class="footer-background" aria-label="footer">
         <div class="content-limit padding">
             <footer class="margin-limit footer-special-margin">
                 <a href="../index.html">
