@@ -20,7 +20,7 @@
             <div class="margin-limit">
                 <div class="menu">
                     <a href="../index.html">
-                        <img src="../assets/img/logo.png" alt="" class="menu-logo">
+                        <img src="../assets/img/logo.png" alt="Go to homepage" class="menu-logo">
                     </a>
                     <nav>
                         <ul class="menu-nav">
@@ -40,7 +40,7 @@
         <section class="content-limit padding">
             <div class="margin-limit">
                 <h1>Fresh Minz-Limonade</h1>
-                <img src="../assets/img/mint-lemon-drink.jpg" alt="Steak-img" class="recipe-hero-img">
+                <img src="../assets/img/mint-lemon-drink.jpg" alt="lemon-img" class="recipe-hero-img">
                 <div class="section1-info-div">
                     <div class="section1-info">
                         <img src="../assets/img/icons/clock-regular.svg" alt="" class="section1-info-img">
@@ -62,13 +62,21 @@
 
         <section class="content-limit padding">
             <div class="margin-limit">
-                <form onsubmit="return false" action="" class="form-section2">
+                <form onsubmit="rezept(); return false;" class="form-section2">
                     <label for="portion">Zutaten für</label>
                     <input type="number" min="1" max="20" id="portion" placeholder="Anzahl an Portionen"
                         class="input-portions" required>
-                    <input type="submit" onclick="rezept()" value="Portionen" class="input-button">
+
+                    <button type="submit" class="input-button">Portionen</button>
                 </form>
                 <table>
+
+                    <head>
+                        <tr class="table-header">
+                            <th scope="col">Menge</th>
+                            <th scope="col">Zutat</th>
+                        </tr>
+                    </head>
                     <tr>
                         <td>
                             <span id="zutA">2</span>
@@ -134,7 +142,7 @@
                 <h2>Rezept erstellt von</h2>
                 <div class="creator-div">
                     <img src="../assets/img/character.jpg" alt="character-img" class="creator-img">
-                    <p class="creator-name">Radhwan</p>
+                    <h2 class="creator-name">Radhwan</h2>
                 </div>
             </div>
         </section>

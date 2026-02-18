@@ -21,7 +21,7 @@
             <div class="margin-limit">
                 <div class="menu">
                     <a href="../index.html">
-                        <img src="../assets/img/logo.png" alt="" class="menu-logo">
+                        <img src="../assets/img/logo.png" alt="Go to homepage" class="menu-logo">
                     </a>
                     <nav>
                         <ul class="menu-nav">
@@ -42,29 +42,26 @@
                 <div>
                     <!-- modify this form HTML and place wherever you want your form -->
                     <form action="https://formspree.io/f/xykyaejo" method="POST" class="box">
-                        <h1>Kontaktiere uns</h1>
-                        <label for="name" class="label-margin">
-                            Dein Name:
-                            <input type="text" name="name" required>
-                        </label>
-                        <label class="label-margin">
-                            Your email:
-                            <input type="email" name="email" required>
-                        </label>
-                        <label class="label-margin">
-                            Your message:
-                            <textarea name="message" required></textarea>
-                        </label>
-                        <!-- your other form fields go here -->
+                        <legend>Kontaktiere uns</legend>
+
+                        <label for="name" class="label-margin">Dein Name:</label>
+                        <input id="name" type="text" name="name" required>
+
+                        <label for="email" class="label-margin">Your email:</label>
+                        <input id="email" type="email" name="email" required>
+
+                        <label for="message" class="label-margin">Your message:</label>
+                        <textarea id="message" name="message" required></textarea>
                         <div class="button-style">
                             <button type="submit">Send</button>
                         </div>
                     </form>
+
                 </div>
             </div>
         </section>
     </main>
-    <section class="footer-background">
+    <section class="footer-background" aria-label="footer">
         <div class="content-limit padding">
             <footer class="margin-limit footer-special-margin">
                 <a href="../index.html">

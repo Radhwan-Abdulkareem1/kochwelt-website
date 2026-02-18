@@ -56,3 +56,8 @@ button {
 
 
 
+button:focus-visible {
+    outline: 3px solid #005fcc;
+    /* gut sichtbare Farbe */
+    outline-offset: 2px;
+}
